@@ -21,6 +21,11 @@ class Book:
         return "size: %d, valuation: %d, count: %d" % (self.size, self.valuation, self.count)
 
 
+# kind_of_book_count: 3, pouch_size: 100
+# size: 50, valuation: 100, count: 2
+# size: 40, valuation: 100, count: 1
+# size: 2, valuation: 1, count: 50
+
 def process(test_case, books):
     print(test_case)
     for i in books:
