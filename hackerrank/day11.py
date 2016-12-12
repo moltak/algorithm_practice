@@ -27,11 +27,12 @@ def createHourGlass(arr):
 
 
 def findMaximumSum(arr):
-  maximumDic = {'max':0}
+  maximumDic = {'max':sum(arr[0])}
   for i in arr:
     if maximumDic.get('max') < sum(i):
       maximumDic['max'] = sum(i)
       maximumDic['value'] = i
+      print(sum(i))
   return maximumDic
 
 
@@ -64,9 +65,9 @@ def main():
   arr = []
   for arr_i in range(6):
     arr_t = [int(arr_temp) for arr_temp in input().strip().split(' ')]
-    arr.append(arr_t)
+    arr.extend(arr_t)
+  print(arr) 
   calc(arr)
-
 
 if __name__ == '__main__':
   main()
